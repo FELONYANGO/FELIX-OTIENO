@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style> 
 div {
 
   padding: 20px; 
-  height: auto;
+
   resize: horizontal;
   text-align: center;
   padding: 20px; 
-  width: auto;
+ 
   resize: horizontal;
   overflow: auto;
   
@@ -24,20 +26,27 @@ body{
      font-weight: 100px;
 }
 html { 
-  background: url(images/felixotieno.gif) no-repeat center center fixed; 
+  background: url(images/felixotieno.gif) ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  flex-direction: column;
   
 }
 footer {
       background-color: rgb(54, 51, 49);
      color: white;
-
+     margin: 0;
     
+    }  .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
     }
-
 </style>
 </head>
 <body>
@@ -62,29 +71,18 @@ footer {
          <p>boldly venturing into the unknown to return richer for it.</p>
       </p>
 </div>
-<footer class="container-fluid text-center"><div class="container-fluid bg-3 text-center ">  
+<footer class="container-fluid text-center" >
+   <div class="container-fluid bg-3 text-center ">  
       
-    <h3>CONTACT ME</h3><br>
-  <div class="row">
-    <div class="col-sm-3">
-      <p>talk2me@twitter</p>
-      <img src="images/twitter.png" class="center" style="width:15%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-        <p>talk2me@facebook</p>
-        <img src="images/facebook.png" class="center" style="width:15%" alt="Image">
-      </div>
-      <div class="col-sm-3">
-        <p>talk2meInwhatsap</p>
-        <img src="images/whatsapp.png" class="center" style="width:15%" alt="Image">
-      </div>
-      <div class="col-sm-3">
-        <p>talk2me@linkedIn</p>
-        <img src="images/linkedin.png" class="center" style="width:15%" alt="Image">
-      </div>
-    
-   
-      
+    <h3>CONTACT ME</h3>
+  <div class="column">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/Felix_On_Twt" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-github"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-google"></a>
+ 
+    </div>     
   </footer>
 
 </body>
