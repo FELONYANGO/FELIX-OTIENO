@@ -66,7 +66,7 @@ body{
      font-weight: 100px;
      align-items: center;
      display: block;
-   
+     background-blend-mode: lighten;
 }
 html { 
   background: url(images/felixotieno.gif) ;
@@ -75,6 +75,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
   flex-direction: column;
+  background-blend-mode: lighten;
 }
 footer {
       background-color: rgb(54, 51, 49);
@@ -98,9 +99,41 @@ footer {
   width: 60%;
   align-items: center;
     }
+    #navbar {
+   position: sticky;
+    top: 0;
+  overflow: hidden;
+  background-color: rgb(54, 51,49);
+    }
+   #navbar a {
+  float: none;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+
+}
+   .nav:hover{
+    opacity: 0.7;
+     background-color: rgb(5, 164, 227)
+   }
+   #navbar a.active {
+    color: white;
+   
+}
 </style>
 </head>
 <body>
+  <div id="navbar">
+    <a href="test.html">Home</a>
+    <a href="apps.html">Apps</a>
+    <a href="web.html">Web</a>
+    <a href="#">Resume</a>
+    <a href="about.html">About</a>
+  </div>
 
 <h1>ANDROID APPS</h1>
 <p>Work I've completed that can be found within google playstore in the vast virtual space of the Internet.</p>

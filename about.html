@@ -24,6 +24,7 @@ body{
      font-size: x-large;
      font-stretch: normal;
      font-weight: 100px;
+     background-blend-mode: lighten;
 }
 html { 
   background: url(images/felixotieno.gif) ;
@@ -32,6 +33,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
   flex-direction: column;
+  background-blend-mode: lighten;
  
 }
 .background__image{
@@ -43,6 +45,7 @@ footer {
       background-color: rgb(54, 51, 49);
      color: white;
      margin: 0;
+
     
     } 
      .fa {
@@ -56,9 +59,41 @@ footer {
     .fa:hover{
       color: whitesmoke;
     }
+    #navbar {
+   position: sticky;
+    top: 0;
+  overflow: hidden;
+  background-color: rgb(54, 51,49);
+    }
+   #navbar a {
+  float: none;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+
+}
+   .nav:hover{
+    opacity: 0.7;
+     background-color: rgb(5, 164, 227)
+   }
+   #navbar a.active {
+    color: white;
+   
+}
 </style>
 </head>
 <body>
+  <div id="navbar">
+    <a href="test.html">Home</a>
+    <a href="apps.html">Apps</a>
+    <a href="web.html">Web</a>
+    <a href="#resume">Resume</a>
+    <a href="about.html">About</a>
+  </div>
 
 <h1>ABOUT</h1>
 <img clas= "background__image" src="images/coders.jpeg" class="cover" style="width:30%; background-size: cover;"  alt="Image">

@@ -2,12 +2,6 @@
 <html>
 
 <head>
-    <title>FelixOtieno</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
@@ -76,22 +70,28 @@
             margin-right: auto;
             width: 40%;
         }
-
-        body {
-            text-align: center;
-            color: black;
-            font-family: URW Chancery L, cursive;
-            font-style: oblique;
-            font-size: x-large;
-            font-stretch: normal;
-            font-weight: 100px;
-            align-items: center;
-            display: block;
-       
-
-
-        }
-
+        body{
+    text-align: center;
+    color: black;
+     font-family: URW Chancery L, cursive	;
+     font-style: oblique;
+     font-size: x-large;
+     font-stretch: normal;
+     font-weight: 100px;
+     align-items: center;
+     display: block;
+     background-blend-mode: lighten;
+   
+}
+  html { 
+  background: url(images/felixotieno.gif) ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex-direction: column;
+  background-blend-mode: lighten;
+}
         footer {
             background-color: rgb(54, 51, 49);
             color: white;
@@ -112,46 +112,57 @@
             margin: auto;
             width: 60%;
             align-items: center;
-        }
-        .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-      padding-top: 0;
-      padding-bottom: 0;
-      margin-left: 0;
-      height: 90px;
+  }
+  #navbar {
+   position: sticky;
+    top: 0;
+  overflow: hidden;
+  background-color: rgb(54, 51,49);
     }
-   nav:hover{
-     opacity: o.7;
+   #navbar a {
+  float: none;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+
+}
+   .nav:hover{
+    opacity: 0.7;
      background-color: rgb(5, 164, 227)
    }
+   #navbar a.active {
+    color: white;
+   
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse ">
-
-        <div class="container-fluid" >
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-            </button>
-            <a class="navbar-brand" href="test.html">Home</a>
-          </div>
-            <divlapse navbar-collapse " id="myNavbar">
-            <ul class="nav navbar-nav py-0 ">
-              <li class="active"><a href="#">web</a></li>
-              <li><a href="apps.html">Apps</a></li>
-              <li><a href="#">Resume</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-             
-          </div>
-        </div>
-      </nav>
+    <div id="navbar">
+        <a href="test.html">Home</a>
+        <a href="apps.html">Apps</a>
+        <a href="web.html">Web</a>
+        <a href="#contact">Resume</a>
+        <a href="about.html">About</a>
+      </div>
 
     <h1>WEBSITES</h1>
     <p>Work I've done that resides out there, somewhere in the vast virtual space of the Internet.</p>
@@ -240,6 +251,7 @@
 
 
     </footer>
+    
 </body>
 
 </html>
